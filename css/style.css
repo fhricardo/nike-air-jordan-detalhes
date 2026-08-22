@@ -77,25 +77,40 @@ header {
         }
 
         .menuTop {
+            width: fit-content;
             display: flex;
             align-items: center;
+            height: 36px;
             gap: 0;
 
             li {
+                height: 36px;
                 list-style-type: none;
+                display: flex;
+                align-items: center;
 
                 a {
                     display: flex;
+                    align-items: center;
+                    height: 36px;
                     width: fit-content;
                     height: 18px;
                     font-size: 12px;
+                    line-height: 12px;
                     color: var(--black);
+                }
 
-                    &::after {
-                        content: "|";
-                        padding: 0 10px;
-                    }
+                &::after {
+                    content: "|";
+                    font-size: 12px;
+                    padding: 0 10px;
+                    display: flex;
+                    align-items: center;
+                    height: 36px;
+                }
 
+                &:last-child::after {
+                    content: "";
                 }
             }
         }
