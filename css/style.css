@@ -231,6 +231,12 @@ header {
                 top: 0;
                 left: 2550px;
             }
+
+            .msg:nth-child(5) {
+                position: absolute;
+                top: 0;
+                left: 3400px;
+            }
         }
     }
 
@@ -265,38 +271,46 @@ header {
 
 @keyframes rolarTexto {
     0% {
-        transform: translateX(0);
+        transform: translateX(0%);
     }
 
-    20% {
-        transform: translateX(0);
+    7.5% {
+        transform: translateX(0%);
     }
 
-    25% {
+    12.5% {
         transform: translateX(-100%);
     }
 
-    45% {
+    32.5% {
         transform: translateX(-100%);
     }
 
-    50% {
+    37.5% {
         transform: translateX(-200%);
     }
 
-    70% {
+    57.5% {
         transform: translateX(-200%);
     }
 
-    75% {
+    62.5% {
         transform: translateX(-300%);
+    }
+
+    82.5% {
+        transform: translateX(-300%);
+    }
+
+    87.5% {
+        transform: translateX(-400%);
     }
 
     99.99% {
-        transform: translateX(-300%);
+        transform: translateX(-400%);
     }
 
     100% {
-        transform: translateX(0);
+        transform: translateX(0%);
     }
 }
